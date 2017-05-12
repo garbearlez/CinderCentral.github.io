@@ -3,5 +3,4 @@
 <meta http-equiv="refresh" content="5; url=http://GarbearLez.github.io/home.html" />
 </head>
 <body>
-<p>You will be redirected in 5 seconds</p>
-<p>If not, click <a href="GarbearLez.github.io">here</a></p>
+<p>This is not the page you are supposed to be on, to go to that page click <a href="GarbearLez.github.io/home.html">here</a></p>
