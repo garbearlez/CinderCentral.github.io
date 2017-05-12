@@ -1,4 +1,3 @@
 # GarbearLez.github.io
 This is a website that I test my coding skills on.
-If you would like to see the main website, click the link below
-GarbearLez.github.io/home.html
+<p><a href="GarbearLez.github.io/home.html">Click Here</a> to go to the home page</p>
