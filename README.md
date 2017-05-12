@@ -1,4 +1,5 @@
-/* # GarbearLez.github.io */
+<!DOCTYPE html>
+# GarbearLez.github.io
 <head>
   <title>GarbearLez - Home</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" height="32" width="32">
