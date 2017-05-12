@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 # GarbearLez.github.io
 <head>
   <title>GarbearLez - Home</title>
