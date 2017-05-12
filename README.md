@@ -4,3 +4,4 @@
 </head>
 <body>
 <p>You will be redirected in 5 seconds</p>
+<p>If not, click <a href="GarbearLez.github.io">here</a></p>
