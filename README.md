@@ -1,5 +1,5 @@
 <head>
-<meta http-equiv="refresh" content="0; url=GarbearLez.github.io/home.html" />
+<meta http-equiv="refresh" content="0; url=/home.html" />
 </head>
 <body>
 <h1>Loading...</h1>
