@@ -1,12 +1,44 @@
 <head>
 <title>New Page</title>
   <link rel="stylesheet" type="text/css" href="/home.css" title="home">
+  <style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
 </head>
 <body>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="navbar">
+  <a href="/home.html">Home</a>
+  <a href="https://youtube.com/garbear_lez">Youtube</a>
+  <a href="mailto:garbearlez@gmail.com">Email Me</a>
+  <a href="/login.html">Login</a>
+  <a href="#about">About</a>
+  <a href="/game.html">Game</a>
+</div>
+  <div class="main">
 <script>
   (function() {
     var cx = '002042021988917827198:q0vumrd0s7s';
@@ -19,5 +51,5 @@
   })();
 </script>
 <gcse:search></gcse:search>
-  
+  </div>
 </body>
