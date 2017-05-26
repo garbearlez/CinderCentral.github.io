@@ -1,5 +1,4 @@
 <head>
-<title>Garbear Lez</title>
 <meta http-equiv="refresh" content="0; url=/home.html" />
 <link rel="stylesheet" type="text/css" href="/home.css" title="home">
 <style type="text/css">
