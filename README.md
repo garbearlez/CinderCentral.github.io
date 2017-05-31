@@ -7,3 +7,9 @@
 <p>If Page doesn't load <a href="GarbearLez.github.io/home.html">click here</a></p>
 <br>
 <p>This page was made by 『Garbear』</p>
+</body>
+<p>This page was opened or refreshed as of</p>
+    <p id="date"></p>
+    <script>
+    document.getElementById("date").innerHTML = Date();
+    </script>
