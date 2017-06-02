@@ -18,7 +18,7 @@ var myBackground;
 function startGame() {
     myGameArea.start();
     myGamePiece = new component(30, 30, "red", 10, 120);
-    myBackground = new component(656, 270, "battlebackground.png", 0, 0, "image");
+    
 }
 
 var myGameArea = {
@@ -63,8 +63,6 @@ function component(width, height, color, x, y) {
 
 function updateGameArea() {
     myGameArea.clear();
-    myBackground.newPos(); 
-    myBackground.update();
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;    
     if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
