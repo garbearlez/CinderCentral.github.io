@@ -16,9 +16,9 @@ var myGamePiece;
 var myBackground;
 
 function startGame() {
-    myGameArea.start();
     myGamePiece = new component(30, 30, "red", 10, 120);
-    
+    myBackground = new component(656, 270, "battlebackground.png", 0, 0, "image");
+    myGameArea.start();
 }
 
 var myGameArea = {
@@ -28,22 +28,30 @@ var myGameArea = {
         this.canvas.height = 700;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function (e) {
             myGameArea.keys = (myGameArea.keys || []);
-            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+            myGameArea.keys[e.keyCode] = true;
         })
         window.addEventListener('keyup', function (e) {
-            myGameArea.keys[e.keyCode] = (e.type == "keydown");            
+            myGameArea.keys[e.keyCode] = false; 
         })
-    }, 
-    clear : function(){
+        },
+    clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    },
+    stop : function() {
+        clearInterval(this.interval);
     }
 }
 
-function component(width, height, color, x, y) {
-    this.gamearea = myGameArea;
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = color;
+    }
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -52,8 +60,15 @@ function component(width, height, color, x, y) {
     this.y = y;    
     this.update = function() {
         ctx = myGameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        if (type == "image") {
+            ctx.drawImage(this.image, 
+                this.x, 
+                this.y,
+                this.width, this.height);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
     }
     this.newPos = function() {
         this.x += this.speedX;
@@ -64,13 +79,27 @@ function component(width, height, color, x, y) {
 function updateGameArea() {
     myGameArea.clear();
     myGamePiece.speedX = 0;
-    myGamePiece.speedY = 0;    
+    myGamePiece.speedY = 0; 
     if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
     if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 2; }
     if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -2; }
     if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speedY = 2; }
     myGamePiece.newPos();    
     myGamePiece.update();
+}
+
+function move(dir) {
+    myGamePiece.image.src = "angry.gif";
+    if (dir == "up") {myGamePiece.speedY = -1; }
+    if (dir == "down") {myGamePiece.speedY = 1; }
+    if (dir == "left") {myGamePiece.speedX = -1; }
+    if (dir == "right") {myGamePiece.speedX = 1; }
+}
+
+function clearmove() {
+    myGamePiece.image.src = "smiley.gif";
+    myGamePiece.speedX = 0; 
+    myGamePiece.speedY = 0; 
 }
 </script>
 
