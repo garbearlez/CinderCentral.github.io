@@ -18,15 +18,15 @@ var myBackground;
 
 function startGame() {
     myGamePiece = new component(34, 108, "banditsprite.gif", 50, 550, "image");
-    myBackground = new component(1535, 863, "battlebackground.png", 0, 0, "image");
+    myBackground = new component(1530, 860, "battlebackground.png", 0, 0, "image");
     myGameArea.start();
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 1535;
-        this.canvas.height = 863;
+        this.canvas.width = 1530;
+        this.canvas.height = 860;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
