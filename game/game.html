@@ -17,7 +17,18 @@ var myGamePiece;
 function startGame() {
     myGameArea.start();
     myGamePiece = new component(30, 30, "red", 10, 120);
+    myBackground = new component(656, 270, "citymarket.jpg", 0, 0, "image");
+    myGameArea.start();
 }
+
+function updateGameArea() {
+    myGameArea.clear();
+    myBackground.newPos(); 
+    myBackground.update();
+    myGamePiece.newPos(); 
+    myGamePiece.update();
+}
+
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
