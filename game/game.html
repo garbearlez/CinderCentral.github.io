@@ -78,6 +78,8 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     myGameArea.clear();
+    myBackground.newPos();    
+    myBackground.update();
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0; 
     if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
