@@ -18,7 +18,7 @@ var myBackground;
 var CollisionManager;
 
 function startGame() {
-    myGamePiece = new component(34, 108, "banditsprite.gif", 50, 700, "image");
+    myGamePiece = new component(34, 108, "char.png", 50, 700, "image");
     myBackground = new component(1520, 841, "grassbackground.jpg", 0, 0, "image");
     CollisionManager = new component(1530, 1, "#", 0, 650)
     myGameArea.start();
@@ -107,21 +107,9 @@ function updateGameArea() {
     myGamePiece.update();
 }
 
-function move(dir) {
-    myGamePiece.image.src = "angry.gif";
-    if (dir == "up") {myGamePiece.speedY = -1; }
-    if (dir == "down") {myGamePiece.speedY = 1; }
-    if (dir == "left") {myGamePiece.speedX = -1; }
-    if (dir == "right") {myGamePiece.speedX = 1; }
-}
 
-function clearmove() {
-    myGamePiece.image.src = "smiley.gif";
-    myGamePiece.speedX = 0; 
-    myGamePiece.speedY = 0; 
-}
 </script>
 
-
+    <div id="charmoving"></div>
 </body>
 </html>
