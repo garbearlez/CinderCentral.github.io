@@ -1,0 +1,5 @@
+#char {
+  width: 150px; height: 198px;
+  position: absolute; bottom: 25px; left: 45%;
+  background: url('charmoving.png');
+}
