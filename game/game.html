@@ -104,7 +104,7 @@ function updateGameArea() {
     myGamePiece.update();
 }
 function move(dir) {
-    myGamePiece = new component(120, 120, "char", 50, 700, "div");
+    myGamePiece = new component(120, 120, "character.css", 50, 700, "image");
     if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
     if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 2; }
     if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -2; }
