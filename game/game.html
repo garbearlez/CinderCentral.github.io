@@ -11,6 +11,7 @@ canvas {
 </style>
 </head>
 <body onload="startGame()">
+    
 <script>
 
 var myGamePiece;
@@ -107,11 +108,11 @@ function updateGameArea() {
     myGamePiece.update();
 }
 function move(dir) {
-    myGamePiece.image.src = "character.js";
-    if (dir == "up") {myGamePiece.speedY = -2; }
-    if (dir == "down") {myGamePiece.speedY = 2; }
-    if (dir == "left") {myGamePiece.speedX = -2; }
-    if (dir == "right") {myGamePiece.speedX = 2; }
+    myGamePiece = new component(120, 120, "char", 50, 700, "div");
+    if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
+    if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 2; }
+    if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -2; }
+    if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speedY = 2; }
 }
 
 function clearmove() {
