@@ -100,15 +100,19 @@ function updateGameArea() {
     myBackground.update();
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0; 
+    if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
+    if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 2; }
+    if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -2; }
+    if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speedY = 2; }
     myGamePiece.newPos();    
     myGamePiece.update();
 }
 function move(dir) {
     myGamePiece = new component(120, 120, "character.css", 50, 700, "image");
-    if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -2; }
-    if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 2; }
-    if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -2; }
-    if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speedY = 2; }
+    if (dir == "up") {myGamePiece.speedY = -1; }
+    if (dir == "down") {myGamePiece.speedY = 1; }
+    if (dir == "left") {myGamePiece.speedX = -1; }
+    if (dir == "right") {myGamePiece.speedX = 1; }
 }
 
 function clearmove() {
