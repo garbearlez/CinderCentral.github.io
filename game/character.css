@@ -4,6 +4,6 @@ html, body {
 }
 #char {
   width: 120px; height: 120px;
-  position: absolute; bottom: 25px; left: 45%;
+  position: absolute; left: 45%;
   background: url('https://github.com/garbearlez/GarbearLez.github.io/blob/master/game/charmoving.png?raw=true');
 }
