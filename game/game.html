@@ -97,18 +97,18 @@ function component(width, height, color, x, y, type) {
 function updateGameArea() {
     myGameArea.clear();
     myBackground.newPos();    
-    myBackground.update();
-    myGamePiece.speedX = 0;
-    myGamePiece.speedY = 0; 
+    myBackground.update(); 
     myGamePiece.newPos();    
     myGamePiece.update();
 }
 function move(dir) {
     myGamePiece = new component(120, 120, "charmoving.gif", 50, 700, "image");
-    if (dir == "up") {myGamePiece.speedY = -1; }
-    if (dir == "down") {myGamePiece.speedY = 1; }
-    if (dir == "left") {myGamePiece.speedX = -1; }
-    if (dir == "right") {myGamePiece.speedX = 1; }
+    myGamePiece.speedX = 0;
+    myGamePiece.speedY = 0; 
+    if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; }
+    if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; }
+    if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; }
+    if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; }
 }
 
 function clearmove() {
