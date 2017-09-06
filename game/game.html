@@ -8,35 +8,35 @@ canvas {
 }
 </style>
 </head>
-<body onload="startgame()">
-  <script>
+<body onload="startGame()">
+<script>
 
 var player;
-    
-function startgame() {
-  playArea.start();
-  var player = new component(30, 30, "red", 10, 10)
+
+function startGame() {
+    gameArea.start();
+    player = new component(30, 30, "red", 10, 120);
 }
 
-var playArea = {
-  canvas : document.createElement("canvas"),
-  start : function() {
-    this.canvas.width = 480;
-    this.canvas.height = 240;
-    this.context = this.canvas.getContext("2d");
-    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-  }
+var gameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
 }
 
 function component(width, height, color, x, y) {
-  this.width = width
-  this.height = height
-  this.x = x
-  this.y = y
-  ctx = gameArea.context;
-  ctx.fillstyle = color
-  ctx.fillRect(this.x, this.y, this.width, this.height);
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    ctx = gameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
 }
-    
-  </script>
+
+</script>
 </body>
