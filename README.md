@@ -1,4 +1,5 @@
 <head>
+<title>Loading...</title>
 <meta http-equiv="refresh" content="0; url=/home.html" />
 <link rel="stylesheet" type="text/css" href="/home.css" title="home">
 </head>
