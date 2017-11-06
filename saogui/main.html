@@ -4,12 +4,13 @@
 <link rel="stylesheet" type="text/css" href="/saogui/main.css" title="main">
 <script>
     function displayMenu1() {
-        document.getElementById(base)
+        document.getElementById("profile").innerHTML = <p><img src="/saogui/images/subimages/items.png">Items</p>
     }
 </script>
 </head>
 <body>
-<button><img src="/saogui/images/main/MainProfile.png" style="width:77px;height:77px;"></img></button>
+<button onclick="displayMenu1()"><img src="/saogui/images/main/MainProfile.png" style="width:77px;height:77px;"></img></button>
+<p id="profile"></p>
   <br>
   <img src="/saogui/images/main/MainFriends.png" style="width:77px;height:77px;"></img>
   <br>
