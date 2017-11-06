@@ -13,3 +13,6 @@ button {
 p {
     color: white;
 }
+iframe {
+    display: none;
+}
