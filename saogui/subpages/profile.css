@@ -4,3 +4,6 @@ body {
 p {
     color: white; 
 }
+iframe {
+    display: none;
+}
