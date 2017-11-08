@@ -3,7 +3,7 @@ body {
 }
 
 img {
-    margin-left: 0px;
+    
 }
 button {
     background-color: #000000;
@@ -15,4 +15,5 @@ p {
 }
 iframe {
     display: none;
+    margin-left: 130px;
 }
