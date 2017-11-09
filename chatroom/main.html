@@ -7,11 +7,22 @@
             height: 1000px;
             margin-top: 30px;
         }
+        .input {
+            
+        }
+        .input a {
+            
+        }
     </style>
 </head>
 <body>
     <div class="main">
-        <iframe src="https://cinderchat-5cf58.firebaseio.com"></iframe>
-        <textbox></textbox>
+        <form action="/chat.php" method="get"></form>
+    </div>
+    <div class="input">
+        <form action="/chat.php">
+            <input type="text" name="chat">
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
