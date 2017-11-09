@@ -1,3 +1,8 @@
+<!DOTYPE html>
+<html>
+<body>
 <?php
-
-php>
+echo "Test"
+?>
+</body>
+</html>
