@@ -4,21 +4,7 @@
 <title>Chat</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script>
-<?
-session_start();
- 
-function loginForm(){
-    echo'
-    <div id="loginform">
-    <form action="index.php" method="post">
-        <p>Please enter your name to continue:</p>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" />
-        <input type="submit" name="enter" id="enter" value="Enter" />
-    </form>
-    </div>
-    ';
-}
+
  
 if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
@@ -57,7 +43,22 @@ $("#submitmsg").click(function(){
 </script>
 </head>
 <body>
- <?php
+    <?
+    session_start();
+     
+    function loginForm(){
+        echo'
+        <div id="loginform">
+        <form action="index.php" method="post">
+            <p>Please enter your name to continue:</p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <input type="submit" name="enter" id="enter" value="Enter" />
+        </form>
+        </div>
+        ';
+    }
+ <php
  if(!isset($_SESSION['name'])){
      loginForm();
  }
@@ -65,7 +66,7 @@ $("#submitmsg").click(function(){
  ?>
 <div id="wrapper">
     <div id="menu">
-        <p class="welcome">Welcome, <b></b></p>
+        <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
         <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
         <div style="clear:both"></div>
     </div>
