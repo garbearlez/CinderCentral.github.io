@@ -2,6 +2,11 @@
 <head>
     <title>CinderChat</title>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <style>
+      .garmsg{
+          color: blue;
+      }
+  </style>
 </head>
 <body>
   <ul id="chat-list">
@@ -11,7 +16,7 @@
   <script>
     var ref = new Firebase("https://cinderchat-5cf58.firebaseio.com/chatroom").limit(35);
     ref.on("child_added", function(snap) {
-      var chatItem = document.createElement("li");
+      var chatItem = document.createElement("garmsg");
       chatItem.innerHTML = JSON.stringify(snap.val());
       chatItem.id = snap.name();
       document.getElementById("chat-list").appendChild(chatItem);
