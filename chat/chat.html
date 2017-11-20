@@ -11,7 +11,7 @@
   <script>
     var ref = new Firebase("https://cinderchat-5cf58.firebaseio.com/chatroom").limit(35);
     ref.on("child_added", function(snap) {
-      var chatItem = document.createElement("li");
+      var chatItem = document.createElement("p");
       chatItem.innerHTML = JSON.stringify(snap.val());
       chatItem.id = snap.name();
       document.getElementById("chat-list").appendChild(chatItem);
