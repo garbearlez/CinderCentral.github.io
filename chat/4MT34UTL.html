@@ -3,7 +3,7 @@
     <title>CinderChat</title>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   <style>
-      garmsg{
+      #garmsg {
           color: blue;
       }
   </style>
@@ -20,8 +20,8 @@
       var chatGar = document.createElement("garmsg")
       chatItem.innerHTML = JSON.stringify(snap.val());
       chatItem.id = snap.name();
-      document.getElementById("chat-list").appendChild(chatItem);
-      document.getElementById("chatItem").appendChild(chatGar)
+      document.getElementById("chat-list").appendChild(chatGar);
+      document.getElementById("chatGar").appendChild(chatItem)
     });
     ref.on("child_removed", function(snap) {
       var item = document.getElementById(snap.name());
