@@ -21,6 +21,7 @@
       chatItem.innerHTML = JSON.stringify(snap.val());
       chatItem.id = snap.name();
       document.getElementById("chat-list").appendChild(chatItem);
+      document.getElementById("chatItem").appendChild(garmsg)
     });
     ref.on("child_removed", function(snap) {
       var item = document.getElementById(snap.name());
