@@ -26,7 +26,8 @@ input {
 input[type=submit] {
   background:#D12028;
   color:white;
-  width: 15%;
+  width: 1px;
+  height: 1px;
   float:left;
 }
 
