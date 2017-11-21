@@ -23,13 +23,7 @@ input {
   margin-bottom: 10px;
 }
 
-input[type=submit] {
-  background:#D12028;
-  color:white;
-  width: 1px;
-  height: 2px;
-  float:right;
-}
+
 
 #nameInput {
   float:left;
