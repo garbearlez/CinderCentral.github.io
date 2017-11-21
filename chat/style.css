@@ -36,9 +36,9 @@ input[type=submit] {
 }
 
 #messageInput {
-  width:65%;
-  border-left: 0;
-  border-right: 0;
+  width:100%;
+  border-left: 1;
+  border-right: 1;
   float:left;
 }
 
