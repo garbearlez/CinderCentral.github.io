@@ -1,5 +1,5 @@
 // Create a reference to firebase
-var messagesRef = new Firebase('https://hackeryou.firebaseio.com/chat');
+var messagesRef = new Firebase('https://cinderchat-5cf58.firebaseio.com/chatroom');
 
 // C.R.E.A.M -  cache your elements
 var messageField = $('#messageInput');
