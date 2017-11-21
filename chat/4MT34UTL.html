@@ -1,45 +1,32 @@
 <html>
 <head>
     <title>CinderChat</title>
-  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
-  <style>
-      body {
-          background-color: #696969;
-      }
-      garmsg {
-          color: #20b2aa;
-      }
-      andmsg {
-          color: green;
-      }
-      phimsg {
-          color: blue;
-      }
-  </style>
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  <link rel="stylesheet" href="http://hackeryou.com/wp-content/themes/hackeryou/style.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
 </head>
 <body>
-  <ul id="chat-list">
-  </ul>
-  <input type="text" id="msg"/>
-  <input type="button" id="send" value="Send"/>
-  <script>
-    var ref = new Firebase("https://cinderchat-5cf58.firebaseio.com/chatroom").limit(35);
-    ref.on("child_added", function(snap) {
-      var chatItem = document.createElement("li");
-      var chatGar = document.createElement("garmsg")
-      chatItem.innerHTML = JSON.stringify(snap.val());
-      chatItem.id = snap.name();
-      document.getElementById("chat-list").appendChild(chatGar).appendChild(chatItem);
-    });
-    ref.on("child_removed", function(snap) {
-      var item = document.getElementById(snap.name());
-      item.parentNode.removeChild(item);
-    });
-    document.getElementById("send").onclick = function() {
-      console.log("test");
-      var msg = document.getElementById("msg").value;
-      ref.ref().push(msg);
-    };
-  </script>
+
+<div class="wrapper">
+  
+
+
+  <div class="messagesWrap">
+    <ul class="messages"></ul>
+  </div>
+
+  <form action="" class="chat">
+    <input type='text' id='nameInput' placeholder='Username' required maxlength=10> 
+    <input type='text' id='messageInput'  placeholder='Type a message...' required maxlength=140>
+    <input type="submit" value="Send">
+   
+  </form>
+
+
+</div>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
