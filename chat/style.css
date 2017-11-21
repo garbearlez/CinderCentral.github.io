@@ -6,7 +6,6 @@
 
 .chat {
   margin: 0;
-  position: fixed
 }
 
 h1 {
@@ -23,17 +22,24 @@ input {
   margin-bottom: 10px;
 }
 
-
+input[type=submit] {
+  background:#D12028;
+  color:white;
+  width: 15%;
+  float:left;
+}
 
 #nameInput {
+  width:20%;
   float:left;
 }
 
 #messageInput {
-  width:100%;
-  border-left: 1;
-  border-right: 1;
+  width:65%;
+  border-left: 0;
+  border-right: 0;
   float:left;
+
 }
 
 .messages {
@@ -47,7 +53,6 @@ input {
 .messagesWrap {
   position: relative;
   min-height: 100px;
-  
 }
 .messagesWrap:before {
   display: block;
