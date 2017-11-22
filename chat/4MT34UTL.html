@@ -1,21 +1,6 @@
 <html>
 <head>
     <title>CinderChat</title>
-    <script>
-        var showText = function (target, message, index, interval) {    
-          if (index < message.length) { 
-            $(target).append(message[index++]); 
-            setTimeout(function () { showText(target, message, index, interval); }, interval); 
-          } 
-        }
-            
-        $(function () { 
-         
-          showText("#motd", ">>>>>>>> Welcome Back, 707.", 0, 150);    
-         
-        }); 
-        
-    </script>
   <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
   <link rel="stylesheet" href="http://hackeryou.com/wp-content/themes/hackeryou/style.css">
@@ -29,7 +14,6 @@
 </head>
 <body style="background-color: #4E4E4E;">
 <embed src="bgmusic.mp3" autostart="true" loop="true" hidden="true">  
-<div id="motd"/>
 <div class="wrapper">
   
 
