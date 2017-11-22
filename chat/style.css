@@ -48,6 +48,7 @@ input[type=submit] {
   background: #4e4e4e;
   padding:20px;
   position: relative;
+  list-style-type: none;
 }
 
 .messagesWrap {
@@ -66,8 +67,4 @@ input[type=submit] {
 .messages strong {
   margin-right: 10px;
   color:#d12028;
-}
-
-#motd {
-    color: white;
 }
