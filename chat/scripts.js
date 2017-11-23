@@ -48,3 +48,18 @@ messagesRef.limitToLast(75).on('child_added', function (snapshot) {
   // Get data from returned
   addMessage(snapshot.val());
 });
+
+//Welcome message animation
+var showText = function (target, message, index, interval) {    
+  if (index < message.length) { 
+    $(target).append(message[index++]); 
+    setTimeout(function () { showText(target, message, index, interval); }, interval); 
+  } 
+}
+    
+$(function () { 
+ 
+  showText("#motd", ">>>>>>Welcome Back, 707.", 0, 150);    
+ 
+}); 
+
