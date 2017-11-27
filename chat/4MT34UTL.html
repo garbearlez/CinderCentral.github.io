@@ -11,8 +11,37 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <link rel="apple-touch-icon-precomposed" type="image/png" href="/chat/favicon.ico">
   <link rel="shortcut icon" href="/chat/favicon.ico" type="image/x-icon">
+  
+  <script>
+  // Welcome animation script //
+      var showText = function (target, message, index, interval) {    
+        if (index < message.length) { 
+          $(target).append(message[index++]); 
+          setTimeout(function () { showText(target, message, index, interval); }, interval); 
+        } 
+      }
+          
+      $(function () { 
+       
+        showText("#msg", ">>>>>>Welcome Back, 707.", 0, 150);    
+       
+      }); 
+      
+      
+      
+  </script>
+  
+  <style>
+      #msg {
+        color: white;
+      }
+  </style>
+  
 </head>
 <body style="background-color: #4E4E4E;">
+    
+<div id="msg"/> 
+<span id="text_target"></span>
 
 <embed src="bgmusic.mp3" autostart="true" loop="true" hidden="true">  
 <div class="wrapper">
