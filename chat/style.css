@@ -32,6 +32,7 @@ input[type=submit] {
 #nameInput {
   width:20%;
   float:left;
+  position: fixed;
 }
 
 #messageInput {
@@ -39,7 +40,7 @@ input[type=submit] {
   border-left: 0;
   border-right: 0;
   float:left;
-
+  position: fixed;
 }
 
 .messages {
