@@ -44,7 +44,7 @@ $('.chat').on('submit',function(e) {
 // Add a callback that is triggered for each chat message
 // this is kind of like an Ajax request, but they come in via websockets
 // 10 of them will load on page load, and any future messages will as well
-messagesRef.limitToLast(75).on('child_added', function (snapshot) {
+messagesRef.limitToLast(175).on('child_added', function (snapshot) {
   // Get data from returned
   addMessage(snapshot.val());
 });
