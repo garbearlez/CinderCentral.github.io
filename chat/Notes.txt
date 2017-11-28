@@ -6,4 +6,4 @@ for register: user input = username
 
 for login:    user input = username + check with user ids
               user input = password + check with user 
-             
+              redirects to user id page
