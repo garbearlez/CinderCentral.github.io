@@ -11,27 +11,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <link rel="apple-touch-icon-precomposed" type="image/png" href="/chat/favicon.ico">
   <link rel="shortcut icon" href="/chat/favicon.ico" type="image/x-icon">
-  
-  <script>
-      var showText = function (target, message, index, interval) {    
-        if (index < message.length) { 
-          $(target).append(message[index++]); 
-          setTimeout(function () { showText(target, message, index, interval); }, interval); 
-        } 
-      }
-          
-      $(function () { 
-       
-        showText("#motd", ">>>>>>Welcome Back, 707.", 0, 200);    
-       
-      }); 
-      
-      
-  </script>
+
 <body style="background-color: #4E4E4E;">
 
 <embed src="bgmusic.mp3" autostart="true" loop="true" hidden="true"> 
-<div class="motd"/>
 <div class="wrapper">
   
   <div class="messagesWrap">
