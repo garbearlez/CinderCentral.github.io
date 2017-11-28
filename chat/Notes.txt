@@ -3,5 +3,5 @@ for register: user input = username
               user input = confirm password
               user input(drop down menu) = chat color
               Information goes into user id 
-for login:  user input = username + check with user ids
-            user input = password + check with user ids
+for login:   user input = username + check with user ids
+             user input = password + check with user ids
