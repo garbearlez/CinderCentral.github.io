@@ -35,7 +35,7 @@ input[type=submit] {
 }
 
 #messageInput {
-  width:65%;
+  width:55%;
   border-left: 0;
   border-right: 0;
   float:left;
@@ -69,8 +69,4 @@ input[type=submit] {
   color:#22FF1F;
 }
 
-.welcome {
-    margin-right: 12px;
-    color: white;
-}
 
