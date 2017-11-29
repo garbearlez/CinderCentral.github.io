@@ -47,7 +47,7 @@ input[type=submit] {
   max-height:500px;
   overflow:scroll;
   background: #4e4e4e;
-  padding:20px;
+  padding:10px;
   position: relative;
   list-style-type: none;
 }
