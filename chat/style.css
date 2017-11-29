@@ -6,6 +6,7 @@
 
 .chat {
   margin: 0;
+  position: fixed;
 }
 
 h1 {
