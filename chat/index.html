@@ -6,6 +6,13 @@
   <link rel="stylesheet" href="http://hackeryou.com/wp-content/themes/hackeryou/style.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
+  <script>
+  // after dom is loaded
+  $(function() {
+    // scroll all the way down
+    $('html, body').scrollTop($(document).height() - $(window).height());
+  });
+  </script>
 </head>
 <body style="background-color: #4E4E4E;">
 
