@@ -18,8 +18,6 @@ function addMessage(data) {
   // Add the message to the DOM
   messageList.append(messageElement);
   
-  //Play a tone to notify others of new message
-  audio.play();
 
   // Scroll to the bottom of the message list
   messageList[0].scrollTop = messageList[0].scrollHeight;
