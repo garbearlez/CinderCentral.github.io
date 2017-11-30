@@ -24,7 +24,7 @@
 
   <form action="" class="chat">
     <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="Andrew" disabled> 
-    <input type='text'data-emojiable="true" id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
+    <input type='text'data-emojiable="true" class="form-control textarea-control" id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
     <input type="submit" value="Send">
    
   </form>
@@ -32,7 +32,6 @@
       <div class="row justify-content-center">
         <div class="col-10">
           <div class="text-left">
-              <input type="text"  placeholder="Username" value="Andrew" disabled>
             <p class="lead emoji-picker-container">
               <textarea class="form-control textarea-control" rows="3" placeholder="Textarea with emoji image input" data-emojiable="true"></textarea>
             </p>
