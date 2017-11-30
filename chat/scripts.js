@@ -9,6 +9,7 @@ var messageList = $('.messages');
 function addMessage(data) {
   var username = data.name || 'anonymous';
   var message = data.text;
+  var audio = new Audio('alert.mp3');
 
   // Create an element
   var nameElement = $('<strong>').text(username);
@@ -16,6 +17,9 @@ function addMessage(data) {
 
   // Add the message to the DOM
   messageList.append(messageElement);
+  
+  //Play a tone to notify others of new message
+  audio.play();
 
   // Scroll to the bottom of the message list
   messageList[0].scrollTop = messageList[0].scrollHeight;
@@ -48,4 +52,3 @@ messagesRef.limitToLast(175).on('child_added', function (snapshot) {
   // Get data from returned
   addMessage(snapshot.val());
 });
-
