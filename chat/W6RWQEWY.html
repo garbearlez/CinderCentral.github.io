@@ -11,57 +11,20 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <link rel="apple-touch-icon-precomposed" type="image/png" href="/chat/favicon.ico">
   <link rel="shortcut icon" href="/chat/favicon.ico" type="image/x-icon">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/emoji.css" rel="stylesheet">
+  
 <body style="background-color: #4E4E4E;">
+
 <div class="wrapper">
   
-
-
   <div class="messagesWrap">
     <ul class="messages"></ul>
   </div>
 
   <form action="" class="chat">
-    <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="Andrew" disabled> 
-    <input type='text'data-emojiable="true" class="form-control textarea-control" id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
-       <textarea class="form-control textarea-control" rows="3" placeholder="Textarea with emoji image input" data-emojiable="true"></textarea>
-      <input type="submit" value="Send">
-   
+    <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="SlightlyEnder" disabled> 
+    <input type='text' id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
+    <input type="submit" value="Send">
   </form>
-     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="text-left">
-            <p class="lead emoji-picker-container">
-              
-            </p>
-            <p class="lead emoji-picker-container">
-              <textarea class="form-control textarea-control" rows="3" placeholder="Textarea with emoji Unicode input" data-emojiable="true" data-emoji-input="unicode"></textarea>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/util.js"></script>
-  <script src="js/jquery.emojiarea.js"></script>
-  <script src="js/emoji-picker.js"></script>
-<script>
-      $(function() {
-        // Initializes and creates emoji set from sprite sheet
-        window.emojiPicker = new EmojiPicker({
-          emojiable_selector: '[data-emojiable=true]',
-          assetsPath: '../img/',
-          popupButtonClasses: 'fa fa-smile-o'
-        });
-        // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
-        // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
-        // It can be called as many times as necessary; previously converted input fields will not be converted again
-        window.emojiPicker.discover();
-      });
-    </script>
 </div>
   
   <script src="scripts.js"></script>
