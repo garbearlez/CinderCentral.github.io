@@ -25,11 +25,15 @@
 
   <form action="" class="chat">
     <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="Andrew" disabled>
-    <input type='text' id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
+    <input type='text' data-emojiable="true" id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
     <input type="submit" value="Send">
   </form>
 </div>
 
   <script src="scripts.js"></script>
+  <script src="lib/js/config.js"></script>
+  <script src="lib/js/util.js"></script>
+  <script src="lib/js/jquery.emojiarea.js"></script>
+  <script src="lib/js/emoji-picker.js"></script>
 </body>
 </html>
