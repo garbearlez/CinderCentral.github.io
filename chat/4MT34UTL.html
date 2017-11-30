@@ -11,6 +11,25 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <link rel="apple-touch-icon-precomposed" type="image/png" href="/chat/favicon.ico">
   <link rel="shortcut icon" href="/chat/favicon.ico" type="image/x-icon">
+  <script>
+      function updateClock() {
+          var now = new Date(), // current date
+              months = ['January', 'February', '...']; // you get the idea
+              time = now.getHours() + ':' + now.getMinutes(), // again, you get the idea
+      
+              // a cleaner way than string concatenation
+              date = [now.getDate(), 
+                      months[now.getMonth()],
+                      now.getFullYear()].join(' ');
+      
+          // set the content of the element with the ID time to the formatted string
+          document.getElementById('time').innerHTML = [date, time].join(' / ');
+      
+          // call this function again in 1000ms
+          setTimeout(updateClock, 1000);
+      }
+      updateClock(); // initial call
+  </script>
 <script>
 // after dom is loaded
 $(function() {
@@ -21,7 +40,7 @@ $(function() {
 <body style="background-color: #4E4E4E;">
 
 <div class="wrapper">
-  
+  <div id="time"></div>
   <div class="messagesWrap">
     <ul class="messages"></ul>
   </div>
