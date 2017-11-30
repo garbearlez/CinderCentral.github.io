@@ -9,7 +9,6 @@ var messageList = $('.messages');
 function addMessage(data) {
   var username = data.name || 'anonymous';
   var message = data.text;
-  var audio = new Audio('alert.mp3');
 
   // Create an element
   var nameElement = $('<strong>').text(username);
