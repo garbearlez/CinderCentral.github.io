@@ -25,8 +25,10 @@
 
   <form action="" class="chat">
     <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="Andrew" disabled>
-    <textarea type='email' id='messageInput'  placeholder='Type a message...' required maxlength=140 data-emojiable="true"></textarea>
-    <input type="submit" value="Send">
+    <p class="lead emoji-picker-container">
+      <textarea type='email' id='messageInput' rows="3" placeholder='Type a message...' required maxlength=140 data-emojiable="true"></textarea>
+      </p>
+        <input type="submit" value="Send">
   </form>
 </div>
  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
