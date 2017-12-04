@@ -6,6 +6,7 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var messageList = $('.messages');
 
+// Variable for timestamp
 var date = new Date();
 
 function addMessage(data) {
@@ -33,7 +34,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " " + date.toString();
+    text : messageField.val() + "" + date.toString();
   }
 
   // Save Data to firebase
