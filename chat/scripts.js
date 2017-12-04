@@ -8,7 +8,7 @@ var messageList = $('.messages');
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
-  var message = data.text + date.gethours + ":" + date.getminutes;
+  var message = data.text + date.getHours + ":" + date.getMinutes;
 
   // Create an element
   var nameElement = $('<strong>').text(username);
@@ -16,7 +16,7 @@ function addMessage(data) {
 
   // Add the message to the DOM
   messageList.append(messageElement);
-  
+
 
   // Scroll to the bottom of the message list
   messageList[0].scrollTop = messageList[0].scrollHeight;
@@ -31,7 +31,7 @@ var date = new Date();
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " + date.gethours + ":" + date.getminutes;
+    text : messageField.val() + " - " + date.getHours + ":" + date.getMinutes;
   }
 
   // Save Data to firebase
