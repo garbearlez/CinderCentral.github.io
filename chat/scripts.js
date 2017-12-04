@@ -5,10 +5,10 @@ var messagesRef = new Firebase('https://cinderchat-5cf58.firebaseio.com/chatroom
 var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var messageList = $('.messages');
-var date = new Date();
+
 function addMessage(data) {
   var username = data.name || 'anonymous';
-  var message = data.text;
+  var message = data.text + date.getHours + ":" + date.getMinutes;
 
   // Create an element
   var nameElement = $('<strong>').text(username);
@@ -24,14 +24,14 @@ function addMessage(data) {
 
 // Listen for the form submit
 $('.chat').on('submit',function(e) {
-
+var date = new Date();
   // stop the form from submitting
   e.preventDefault();
 
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val();
+    text : messageField.val() + " - " + date.getHours + ":" + date.getMinutes;
   }
 
   // Save Data to firebase
