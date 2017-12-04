@@ -8,7 +8,7 @@ var messageList = $('.messages');
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
-  var message = data.text + date.toString();
+  var message = data.text + date.gethours + ":" + date.getminutes;
 
   // Create an element
   var nameElement = $('<strong>').text(username);
@@ -31,7 +31,7 @@ var date = new Date();
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " + date.toString()
+    text : messageField.val() + " - " + date.gethours + ":" + date.getminutes;
   }
 
   // Save Data to firebase
