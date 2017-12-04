@@ -6,9 +6,6 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var messageList = $('.messages');
 
-// Variable for timestamp
-var date = new Date();
-
 function addMessage(data) {
   var username = data.name || 'anonymous';
   var message = data.text;
@@ -27,7 +24,7 @@ function addMessage(data) {
 
 // Listen for the form submit
 $('.chat').on('submit',function(e) {
-
+var date = new Date();
   // stop the form from submitting
   e.preventDefault();
 
