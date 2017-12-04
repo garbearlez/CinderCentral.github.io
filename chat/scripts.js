@@ -8,7 +8,7 @@ var messageList = $('.messages');
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
-  var message = data.text;
+  var message = data.text + date.toString();
 
   // Create an element
   var nameElement = $('<strong>').text(username);
