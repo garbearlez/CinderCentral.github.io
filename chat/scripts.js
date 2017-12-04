@@ -31,7 +31,7 @@ var date = new Date();
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + "" + date.toString()
+    text : messageField.val() + " - " + date.toString()
   }
 
   // Save Data to firebase
