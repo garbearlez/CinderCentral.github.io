@@ -33,7 +33,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " +  date.getHours() + ":" + date.getMinutes() + " " + date.getDate() + "/" + date.getMonth()
+    text : messageField.val() + " - " +  currentTime.getHours() + ":" + currentTime.getMinutes() + " " + date.getDate() + "/" + date.getMonth()
   }
 
   // Save Data to firebase
@@ -61,3 +61,21 @@ $('.login').on('loginatmpt',function(l) {
     //change username
     nameField.val('')
 });
+
+//This is to update the time when message was last submitted
+function updateTime(){
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+    if (minutes < 10){
+        minutes = "0" + minutes
+    }
+    var t_str = hours + ":" + minutes + " ";
+    if(hours > 11){
+        t_str += "PM";
+    } else {
+        t_str += "AM";
+    }
+    document.getElementById('time_span').innerHTML = t_str;
+}
+setInterval(updateTime, 1000);
