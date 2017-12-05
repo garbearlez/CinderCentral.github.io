@@ -6,16 +6,7 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var loginField = $('#codeInput')
 var messageList = $('.messages');
-
-function updateTime(){           //This is the time update//
-    var currentTime = new Date()
-    var hours = date.getHours()
-    var minutes = date.getMinutes()
-    if (minutes < 10){
-        minutes = "0" + minutes
-    }
-}
-setInterval(updateTime, 1000);
+var date = new Date()
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
