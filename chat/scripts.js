@@ -61,3 +61,24 @@ $('.login').on('loginatmpt',function(l) {
     //change username
     nameField.val('')
 });
+
+// This function starts the request and calls success on response.
+var refresh = function() {
+  $.ajax({
+    url: "/some/path",
+    cache: false,
+    success: success
+  });
+}
+
+// Replaces the contents of the field with your response and
+// triggers refresh() after 1000ms.
+var success = function(data) {
+  $(".chat").html(data);
+  setTimeout(refresh, 1000);
+}
+
+// Starts processing when document is ready.
+$(function() {
+  refresh();
+}
