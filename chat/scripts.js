@@ -6,11 +6,11 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var loginField = $('#codeInput')
 var messageList = $('.messages');
-
 var date = new Date();
+
 function addMessage(data) {
   var username = data.name || 'anonymous';
-  var message = data.text;
+  var message = data.text + " - " + date.toString();
 
   // Create an element
   var nameElement = $('<strong>').text(username);
