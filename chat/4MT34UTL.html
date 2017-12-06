@@ -17,7 +17,24 @@ $(function() {
   // scroll all the way down
   $('html, body').scrollTop($(document).height() - $(window).height());
 });
+//This is the time scripts
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').value =
+    h + ":" + m
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 </script>
+
 <body style="background-color: #4E4E4E;">
     
 <div class="wrapper">
@@ -31,6 +48,7 @@ $(function() {
 <p class="lead emoji-picker-container">
 <input type='text' data-emojiable="true" class="form-control textarea-control" id='messageInput' rows="3" placeholder='Type a message...' required maxlength=140 autocomplete='off'></textarea>
 </p>
+<input type='text' id='txt'>
     <input type="submit" value="Send">
   </form>
 </div>
