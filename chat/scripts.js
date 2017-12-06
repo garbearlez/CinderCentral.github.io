@@ -4,9 +4,9 @@ var messagesRef = new Firebase('https://cinderchat-5cf58.firebaseio.com/chatroom
 // C.R.E.A.M -  cache your elements
 var messageField = $('#messageInput');
 var nameField = $('#nameInput');
-var loginField = $('#codeInput')
+var loginField = $('#codeInput');
 var messageList = $('.messages');
-var dateField = ('#txt')
+var timeField = ('#txt')
 var date = new Date()
 
 function addMessage(data) {
@@ -16,11 +16,10 @@ function addMessage(data) {
 
   // Create an element
   var nameElement = $('<strong>').text(username);
-  var messageElement = $('<p>').text(message).prepend(nameElement);
-  var dateElement = $('<li>').text(date).prepend(nameElement);
+  var messageElement = $('<li>').text(message).prepend(nameElement);
 
   // Add the message to the DOM
-  messageList.append(dateElement);
+  messageList.append(messageElement);
   
 
   // Scroll to the bottom of the message list
@@ -36,12 +35,11 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val(),
-    date : dateField.val() + date.getMonth() + " - " + date.getDate()
-  }
+    text : messageField.val() + " - " + timeField.val()
+  };
 
   // Save Data to firebase
-  messagesRef.push(date);
+  messagesRef.push(message);
 
   // clear message field
   messageField.val('');
