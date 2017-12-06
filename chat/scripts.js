@@ -16,8 +16,8 @@ function addMessage(data) {
 
   // Create an element
   var nameElement = $('<strong>').text(username);
-  var messageElement = $('<li>').text(message).prepend(nameElement);
-  var dateElement = $('<li>').text(date).prepend(messageElement);
+  var messageElement = $('<p>').text(message).prepend(nameElement);
+  var dateElement = $('<li>').text(date).prepend(nameElement);
 
   // Add the message to the DOM
   messageList.append(dateElement);
