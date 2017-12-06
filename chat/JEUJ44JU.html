@@ -11,27 +11,31 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white">
   <link rel="apple-touch-icon-precomposed" type="image/png" href="/chat/favicon.ico">
   <link rel="shortcut icon" href="/chat/favicon.ico" type="image/x-icon">
-  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="lib/css/emoji.css" rel="stylesheet">
+
+</head>
 <body style="background-color: #4E4E4E;">
 
 <div class="wrapper">
-  
-
 
   <div class="messagesWrap">
     <ul class="messages"></ul>
   </div>
 
   <form action="" class="chat">
-    <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="WaterTheKid" disabled> 
-    <input type='text' id='messageInput'  placeholder='Type a message...' required maxlength=140 autocomplete="off">
-    <input type="submit" value="Send">
-   
+    <input type='text' id='nameInput' placeholder='Username' required maxlength=10 value="WaterTheKid" disabled>
+     <p class="lead emoji-picker-container">
+      <input type='text' data-emojiable="true" class="form-control textarea-control" id='messageInput' rows="3" placeholder='Type a message...' required maxlength=140></textarea>
+      </p>
+        <input type="submit" value="Send">
   </form>
-
-
 </div>
-  
+ <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="scripts.js"></script>
+  <script src="lib/js/config.js"></script>
+  <script src="lib/js/util.js"></script>
+  <script src="lib/js/jquery.emojiarea.js"></script>
+  <script src="lib/js/emoji-picker.js"></script>
 </body>
 </html>
