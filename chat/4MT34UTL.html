@@ -25,7 +25,7 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('txt').value =
+    document.getElementById('timeInput').value =
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
@@ -48,7 +48,7 @@ function checkTime(i) {
 <p class="lead emoji-picker-container">
 <input type='text' data-emojiable="true" class="form-control textarea-control" id='messageInput' rows="3" placeholder='Type a message...' required maxlength=140 autocomplete='off'></textarea>
 </p>
-<input type='text' id='txt'>
+<input type='text' id='timeInput'>
     <input type="submit" value="Send">
   </form>
 </div>
