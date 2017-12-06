@@ -6,7 +6,7 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var loginField = $('#codeInput');
 var messageList = $('.messages');
-var timeField = ('#timeInput');
+var timeField = $('#timeInput');
 var date = new Date();
 
 function addMessage(data) {
@@ -35,7 +35,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " + timeInput.val(),
+    text : messageField.val() + " - " + timeField.val(),
   };
 
   // Save Data to firebase
