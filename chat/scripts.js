@@ -6,8 +6,8 @@ var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var loginField = $('#codeInput');
 var messageList = $('.messages');
-var timeField = ('#timeInput')
-var date = new Date()
+var timeField = ('#timeInput');
+var date = new Date();
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
