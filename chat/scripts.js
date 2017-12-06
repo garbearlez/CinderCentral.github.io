@@ -12,7 +12,7 @@ var date = new Date()
 function addMessage(data) {
   var username = data.name || 'anonymous';
   var message = data.text;
-  var date = data.date
+  var date = data.date;
 
   // Create an element
   var nameElement = $('<strong>').text(username);
@@ -21,7 +21,6 @@ function addMessage(data) {
   // Add the message to the DOM
   messageList.append(messageElement);
   
-
   // Scroll to the bottom of the message list
   messageList[0].scrollTop = messageList[0].scrollHeight;
 }
@@ -35,7 +34,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " 
+    text : messageField.val() + " - " + timeField.val(),
   };
 
   // Save Data to firebase
