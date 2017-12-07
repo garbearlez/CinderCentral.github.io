@@ -35,7 +35,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " + timeField.val() + ", " + date.getMonth() + "/" + date.getDate()
+    text : messageField.val() + " - " + timeField.val() + ", " + date.getUTCMonth() + "/" + date.getUTCDate()
   };
 
   // Save Data to firebase
