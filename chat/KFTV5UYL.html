@@ -20,10 +20,9 @@ $(function() {
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    var d = today.getUTCDate();
-    var mo = today.getUTCMonth();
+    var m = today.getMinutes()
+    var d = today.setDate(today.getUTCDate() + 1 );
+    var mo = today.setMonth(today.getUTCMonth() + 1 );
     m = checkTime(m);
     s = checkTime(s);
     mo = checkTime(mo);
