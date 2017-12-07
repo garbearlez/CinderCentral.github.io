@@ -89,6 +89,6 @@ $(function () {
 
 
 
-$('.codelogin').on('#login',function show() {
+$('.codelogin').on('login',function show() {
 if (loginField.value == "4MT34UTL"){loginField.val('707')}
 });
