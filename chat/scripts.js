@@ -63,15 +63,6 @@ messagesRef.limitToLast(175).on('child_added', function (snapshot) {
 });
 
 
-// Login scripts
-$('.login').on('loginatmpt',function(l) {
-    // stop form from submitting
-    l.preventDefault();
-    
-    //change username
-    nameField.val('')
-});
-
 //Welcome scripts
 var showText = function (target, message, index, interval) {   
   if (index < message.length) {
@@ -89,6 +80,9 @@ $(function () {
 
 
 
-$('.codelogin').on('login',function show() {
-if (loginField.value == "4MT34UTL"){loginField.val('707')}
+$('.codelogin').on('login',function show(l) {
+
+    l.preventDefault();
+    
+    if (loginField.value == "4MT34UTL"){loginField.val('707')}
 });
