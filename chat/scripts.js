@@ -8,6 +8,7 @@ var loginField = $('#codeInput');
 var messageList = $('.messages');
 var timeField = $('#timeInput');
 var date = new Date();
+var audio = new Audio('alert.mp3');
 
 function addMessage(data) {
   var username = data.name || 'anonymous';
@@ -35,7 +36,7 @@ $('.chat').on('submit',function(e) {
   // create a message object
   var message = {
     name : nameField.val(),
-    text : messageField.val() + " - " + timeField.val() + ", " + date.getUTCMonth() + "/" + date.getUTCDate()
+    text : messageField.val() + " - " + timeField.val() + ", " + date.getMonth() + "/" + date.getDate()
   };
 
   // Save Data to firebase
@@ -52,6 +53,7 @@ $('.chat').on('submit',function(e) {
 messagesRef.limitToLast(175).on('child_added', function (snapshot) {
   // Get data from returned
   addMessage(snapshot.val());
+  audio.play();
 });
 
 
