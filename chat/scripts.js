@@ -46,8 +46,10 @@ $('.chat').on('submit',function(e) {
   messageField.val('');
   
   // stops audio from playing when you add a message
-  audio.stop();
-
+  audio.pause();
+  
+  // reloads audio after being paused
+  audio.load();
 });
 
 // Add a callback that is triggered for each chat message
