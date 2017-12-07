@@ -85,3 +85,10 @@ $(function () {
   showText("#motd", "Welcome Back, 707.", 0, 200);   
 
 });
+
+
+
+
+$('.codelogin').on('#login',function show() {
+if (loginField.value == "4MT34UTL"){loginField.val('707')}
+});
