@@ -22,10 +22,14 @@ function startTime() {
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
+    var d = today.getUTCDate();
+    var mo = today.getUTCMonth();
     m = checkTime(m);
     s = checkTime(s);
+    mo = checkTime(mo);
+    d = checkTime(d);
     document.getElementById('timeInput').value =
-    h + ":" + m;
+    h + ":" + m + " " + mo + "/" + d;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
