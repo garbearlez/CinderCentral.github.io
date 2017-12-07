@@ -44,7 +44,12 @@ $('.chat').on('submit',function(e) {
 
   // clear message field
   messageField.val('');
-
+  
+  // stops audio from playing when you add a message
+  audio.pause();
+  
+  // reloads audio after being paused
+  audio.load();
 });
 
 // Add a callback that is triggered for each chat message
@@ -53,7 +58,8 @@ $('.chat').on('submit',function(e) {
 messagesRef.limitToLast(175).on('child_added', function (snapshot) {
   // Get data from returned
   addMessage(snapshot.val());
-  audio.play();
+  
+  audio.play(); //This plays a sound when someone messages
 });
 
 
