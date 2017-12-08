@@ -7,6 +7,7 @@ var nameField = $('#nameInput');
 var loginField = $('#codeInput');
 var messageList = $('.messages');
 var timeField = $('#timeInput');
+var iconField = $('#iconInput');
 var date = new Date();
 var audio = new Audio('alert.mp3');
 
@@ -35,7 +36,7 @@ $('.chat').on('submit',function(e) {
 
   // create a message object
   var message = {
-    name : nameField.val(),
+    name : iconField.val() + " " + nameField.val(),
     text : messageField.val() + " - " + timeField.val()
   };
 
