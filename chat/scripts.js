@@ -84,5 +84,5 @@ $('.codelogin').on('login',function show(l) {
 
     l.preventDefault();
     
-    if (loginField.value == "4MT34UTL"){loginField.val('707')}
+    if (loginField.value == "4MT34UTL"){nameField.val('test')}
 });
