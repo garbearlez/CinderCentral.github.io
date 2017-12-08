@@ -32,10 +32,6 @@ $('.chat').on('submit',function(e) {
 
   // stop the form from submitting
   e.preventDefault();
-  
-  if(document.getElementById("uploadBox").value !== "") {
-     document.getElementById("messageField").
-  }
 
   // create a message object
   var message = {
