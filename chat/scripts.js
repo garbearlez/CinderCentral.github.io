@@ -36,7 +36,7 @@ $('.chat').on('submit',function(e) {
 
   // create a message object
   var message = {
-    name : iconField.val() + " " + nameField.val(),
+    name : nameField.val(),
     text : messageField.val() + " - " + timeField.val()
   };
 
