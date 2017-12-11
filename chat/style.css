@@ -61,7 +61,7 @@ input[type=submit] {
   padding-bottom: 10px;
   margin:10px 0;
   color: #FFFFFF;
-  font: arial;
+  font-family: arial;
 }
 
 
