@@ -15,11 +15,13 @@ function addMessage(data) {
   var username = data.name || 'anonymous';
   var message = data.text;
   var time = data.time;
+  var icon = data.icon;
 
   // Create an element
   var nameElement = $('<strong>').text(username);
+  var iconElement = $('<img>').image(icon).prepend(messageElement);
   var messageElement = $('<p>').text(message).prepend(nameElement);
-  var timeElement = $('<li>').text(time).prepend(messageElement);
+  var timeElement = $('<li>').text(time).prepend(iconElement);
 
   // Add the message to the DOM
   messageList.append(timeElement);
