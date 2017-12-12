@@ -38,7 +38,7 @@ $('.chat').on('submit',function(e) {
 
   // create a message object
   var message = {
-    name : "<img src='" + iconField.val() + "' width='48px' width='48px'>" + nameField.val(),
+    name : nameField.val(),
     text : messageField.val() + " - " + timeField.val()
   };
 
