@@ -20,8 +20,7 @@ function addMessage(data) {
   // Create an element
   var nameElement = $('<strong>').text(username);
   var messageElement = $('<p>').text(message).prepend(nameElement);
-  var timeElement = $('<li>').text(time).prepend(iconElement);
-  var iconElement = $('<img>').img(icon).parent(messageElement);
+  var timeElement = $('<li>').text(time).prepend(messageElement);
 
   // Add the message to the DOM
   messageList.append(timeElement);
@@ -38,8 +37,7 @@ $('.chat').on('submit',function(e) {
 
   // create a message object
   var message = {
-    icon : "<img src='" + iconField.val() + "' width='48px' height='48px'",
-    name : nameField.val(),
+    name : "<img src='" + iconField.val() + "' width='48px' height='48px'" + nameField.val(),
     text : messageField.val() + " - " + timeField.val()
   };
 
