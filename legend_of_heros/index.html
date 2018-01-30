@@ -17,7 +17,7 @@
     
     function startGame() {
         myGameArea.start();
-        player = new component(104, 98, "https://garbearlez.github.io/legend_of_heros/images/sprites/Kensou.gif", 10, 120)
+        player = new component(104, 98, "https://garbearlez.github.io/legend_of_heros/images/sprites/Kensou.gif", 10, 120, "image")
     }
     
     
@@ -30,7 +30,7 @@
             document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         }
         
-        function component(width, height, color, x, y) {
+        function component(width, height, image, x, y) {
             this.width = width;
             this.height = height;
             this.x = x;
