@@ -1,8 +1,25 @@
 <head>
 <script>
-var x = document.getElementById("myLocalDate");
-document.getElementById('timeInput').value =
-    x;
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var d = today.getUTCDate();
+    var mo = today.getUTCMonth();
+    m = checkTime(m);
+    s = checkTime(s);
+    mo = checkTime(mo);
+    d = checkTime(d);
+    document.getElementById('timeInput').value =
+    h + ":" + m + " " + mo + "/" + d;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</sript>
 </head>
 <body>
 <p id="TimeInput"></p>
