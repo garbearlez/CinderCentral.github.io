@@ -30,7 +30,7 @@ function startTime() {
     d = checkTime(d);
     s = checkTime(s);
     document.getElementById('timeInput').value =
-    h + ":" + m + " " + mo + "/" + d;
+    h + ":" + m + " " + mo + 1 + "/" + d;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
