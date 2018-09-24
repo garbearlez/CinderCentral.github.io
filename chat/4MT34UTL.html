@@ -29,7 +29,7 @@ function startTime() {
     mo = checkTime(mo);
     d = checkTime(d);
     document.getElementById('timeInput').value =
-    h + ":" + m + " " + mo + 1 + "/" + d;
+    h + ":" + m + " " + mo + "/" + d;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
