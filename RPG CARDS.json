@@ -1,0 +1,726 @@
+[
+  {
+    "count": "4",
+    "title": "Warrior",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 20",
+      "property | STA: | 2",
+      "property | ATK: | 3",
+      "property | RNG: | 1",
+      "property | MAG: | 0",
+      "text | If another warrior is one space away they both get an ATK boost of +1",
+      "fill",
+      "description | This warrior has trained for countless hours to become one of the best | ",
+      ""
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Archer",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 20",
+      "property | STA: | 3",
+      "property | ATK: | 3",
+      "property | RNG: | 3",
+      "property | MAG: | 2",
+      "fill",
+      "description | This archer is able to hit an enemy from far away. He likes to spend his free time hunting in the woods |"
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Medic",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 20",
+      "property | STA: | 2",
+      "property | ATK: | 1",
+      "property | RNG: | 1",
+      "property | MAG: | 2",
+      "text | If any healing ability is used by Medic on another piece, the effect is doubled.",
+      "fill",
+      "description | This is a person highly skilled in medicine and healing arts |"
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Blacksmith",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 25",
+      "property | STA: | 1",
+      "property | ATK: | 3",
+      "property | RNG: | 1",
+      "property | MAG: | 0",
+      "fill",
+      "description | This blacksmith has made many weapons. He has mastered his skill and is able to repair most weapons |"
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Ranger",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 15",
+      "property | STA: | 3",
+      "property | ATK: | 4",
+      "property | RNG: | 5",
+      "property | MAG: | 1",
+      "text | Everytime you attack you have a chance of doing 2 times the damage(How To Play Card 5)",
+      "fill",
+      "description | This person is highly skilled with a gun. He is an amazing sharp shooter |"
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "PLAYER BASE",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 0",
+      "property | STA: | 0",
+      "property | ATK: | 0",
+      "property | RNG: | 0",
+      "property | MAG: | 0",
+      "fill",
+      "description | CUSTOM DESCRIPTION HERE | "
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Fireball",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 2",
+      "property | Damage: | 5",
+      "property | Spell Range: | 10",
+      "fill",
+      ""
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Mage",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 15",
+      "property | STA: | 2",
+      "property | ATK: | 2",
+      "property | RNG: | 1",
+      "property | MAG: | 5",
+      "fill",
+      "description | This person has spent hours on end studying the magic arts. They can do high ranking spells that many dream of doing | "
+    ],
+    "tags": [
+      "person"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "SPELL BASE",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      ""
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Heal",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 2",
+      "text | <u>Heals one teammate by 2</u>",
+      ""
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Potion",
+    "contents": [
+      "subtitle | Item, consumable",
+      "rule",
+      "text | Heals 5 HP to applied troop"
+    ],
+    "tags": [
+      "item"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "ITEM BASE",
+    "contents": [
+      "subtitle | Item",
+      "rule",
+      "text | DESCRIPTION GOES HERE"
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 1",
+    "contents": [
+      "subtitle | Parts Of A Card",
+      "rule",
+      "text | <b><u>A Turn</u></b>",
+      "text | A turn consists of a movement, an attack, and spells.",
+      "text | <b><u>STATS</b></u>",
+      "bullet | <b>ATK</b> this is how much damage you do to an enemy piece",
+      "bullet | <b>STA</b> This is how many spaces you can move in one turn",
+      "bullet | <b>RNG</b> This is how many spaces away your piece can hit an enemy",
+      "bullet | <b>MAG</b> This is the level of Spells you can cast. Only one per turn"
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Shortsword",
+    "contents": [
+      "subtitle | Item",
+      "rule",
+      "text | When Equipped to a creature, add 2 ATK to that creature"
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 2",
+    "contents": [
+      "subtitle | Stats Explained",
+      "rule",
+      "property | ATK -| ATK or attack is how much damage your piece does. A piece can attack once per turn. ATK stats can even be raised by spells or items (Ex. The item <i>Shortsword</i> can be used to raise a pieces attack by 2.)",
+      "property | STA -| STA or Stamina is how many spaces your piece can move each turn. There are spells and items that can replenish most or even all of your stamina for that turn (Ex. the item <i>Brew of Endurance</i> will let you be able to move again that turn, This can be useful for evading an enemy attack.)"
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 3",
+    "contents": [
+      "subtitle | Stats Explained, Continued",
+      "rule",
+      "property | RNG -| RNG or Range is the distance you can hit someone from. (Ex. if an enemy piece is 3 spaces away the archer(base RNG of 3) would be able to hit it but a warrior(base RNG of 1) would not be able to.",
+      "property | MAG -| MAG or Magic is the level of spell you can cast. (Ex. A mage (Base MAG of 5) would be able to summon the spell Stopwatch (Magic cost of 4) but a blacksmith (Base MAG of 0) would not be able to cast it.",
+      "property | HP | HP or Health is the amount of damage you can take before your piece dies."
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Stopwatch",
+    "contents": [
+      "subtitle | Fast Spell",
+      "rule",
+      "property | Magic cost: | 4",
+      "text | You or an enemy piece will have to return back to their previous move."
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "maroon",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Magic Text Book",
+    "contents": [
+      "subtitle | Item, equippable",
+      "rule",
+      "text | When equipped to a piece, that piece gets +2 magic."
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 4",
+    "contents": [
+      "subtitle | Types of items",
+      "rule",
+      "property | Consumable -| These items can be used whenever you want. Once you use them, they are not usable for the entire game.",
+      "property | Equipable - | These items can only be used during your turn. They are equipped with one piece and stay on it until you unequip it or an unequipment spell is cast.",
+      "subtitle | Types of spells",
+      "rule",
+      "property | Basic - | These spells can be cast only on your turn.",
+      "property | Fast - | These spells can be used whenever you want.",
+      "",
+      ""
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": "4",
+    "title": "Thief",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | 15",
+      "property | STA: | 6",
+      "property | ATK: | 0",
+      "property | RNG: | 1",
+      "property | MAG: | 1",
+      "text | If this thief is next to an enemy with an equipped item. you have a chance to steal that item. (See How To Play Card 6)",
+      "fill",
+      "description | This thief has grown up to love taking from others | "
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 6",
+    "contents": [
+      "subtitle | Player Abilities",
+      "rule",
+      "property | Warrior| <u>Battlecry</u> - If multiple warriors are next to each other then each one gets +1 ATK.",
+      "property | Medic | <u>First Aid</u> - If a medic is healing another piece that ability is multiplied by 2.",
+      "property | Thief | <u>Sneak</u> - If a thief is stealing from an enemy piece, Roll a dice, if 3 or up it was successful, if lower, then you lose and take 3 damage.",
+      "property | Ranger | <u>Headshot</u> - Everytime you attack, roll a dice. If you roll a two, then do twice the damage you would normaly do."
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 5",
+    "contents": [
+      "subtitle | Types of spells, continued",
+      "rule",
+      "property | Bound - | These are spells that are cast onto a piece. They can only be removed when that piece dies or by another spell.",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Bandits",
+    "contents": [
+      "subtitle | Summoned units",
+      "rule",
+      "property | HP | 30",
+      "property | STA | 1",
+      "property | ATK | 4",
+      "property | RNG | 1",
+      "property | MAG | 0",
+      "text | This piece is unable to use any items.",
+      "fill",
+      "description | Know thy self, know thy enemy. A thousand battles, a thousand victories  | ",
+      "text | -Sun Tzu"
+    ],
+    "tags": [],
+    "color": "#666633",
+    "icon": "rally-the-troops",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Custom Player",
+    "contents": [
+      "subtitle | Player",
+      "rule",
+      "property | HP: | ____________",
+      "property | STA: | ____________",
+      "property | ATK: | ____________",
+      "property | RNG: | ____________",
+      "property | MAG: | ____________",
+      "text | <b>ABILITY:</b> ________________________",
+      "fill",
+      "description | Sometimes life can be based on the toss of a dice.. | "
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "darkgoldenrod",
+    "icon": "person",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "HOW TO PLAY PART 7",
+    "contents": [
+      "subtitle | Custom Player Explained",
+      "rule",
+      "text | The custom player card is exactly as it sounds. The only thing is the stats are based off the roll of a dice. You will need at least one 6 sided dice, and one 20 sided dice.",
+      "property | HP | For HP you have to roll the 6 sided die. if the dice lies over 4, then you will have to roll the 20 sided and the 6 sided dice. based on the sum of what they both landed on that s your HP. If it didn't land on 4 or higher when you first rolled the 6 sided dice alone, then you will only roll the 20 sided dice.",
+      "property | STA, MAG, ATK, RNG | Roll the 6 sided dice for each of these stats whatever side it landed on that will be your stats.",
+      "",
+      ""
+    ],
+    "tags": [
+      "tutorial"
+    ],
+    "color": "DimGray",
+    "icon_back": "split-cross",
+    "icon": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "GAME MASTER CARD",
+    "contents": [
+      "subtitle | What To Do...",
+      "rule",
+      "text | As the Game Master, you are in control. You can do whatever you feel is necessary...",
+      "text | You will be deciding how the story goes and how the board is placed. You can give the Player(s) different quests. These can range from eliminating enemies to whatever you want.",
+      "text | The Player(s) end game is to try to defeat you in becoming the next <i>Game Master</i>.",
+      "",
+      ""
+    ],
+    "tags": [],
+    "color": "MidnightBlue",
+    "icon": "hand-of-god",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Game Master",
+    "contents": [
+      "subtitle | STATS",
+      "rule",
+      "property | HP | 50",
+      "property | STA | Dice Roll",
+      "property | ATK | Dice Roll",
+      "property | RNG | Dice Roll",
+      "property | MAG | Dice Roll",
+      "text |",
+      "property | ABILITY: | Terrain Formation, Summon, Double Chance.",
+      "fill",
+      "description | I didn't come here to bring peace, but I have come here with a sword |"
+    ],
+    "tags": [],
+    "color": "MidnightBlue",
+    "icon": "hand-of-god",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "GAME MASTER STATS",
+    "contents": [
+      "subtitle | ABILITIES EXPLAINED",
+      "rule",
+      "property | Terrain Formation - | The Game Master can raise the terrain to block enemy attacks for one turn.",
+      "property | Summon - | The Game Master can summon Cosmic Warriors for one turn.",
+      "property | Double Chance - | You can roll 2 dice instead of one for any of your stats. But the stats that you roll the next 2 turns loose 2 of what you roll. (If you go into the negatives then you lose that much health.)",
+      "fill"
+    ],
+    "tags": [],
+    "color": "MidnightBlue",
+    "icon": "hand-of-god",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "SUMMONED BASE",
+    "contents": [
+      "subtitle | Summoned units",
+      "rule",
+      "property | HP | 0",
+      "property | STA | 0",
+      "property | ATK | 0",
+      "property | RNG | 0",
+      "property | MAG | 0",
+      "text | This piece is unable to use any items.",
+      "fill"
+    ],
+    "tags": [
+      "base"
+    ],
+    "color": "#666633",
+    "icon": "rally-the-troops",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Buff Up",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "text | Raise your ATK by +1"
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Psychokinesis",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 4",
+      "text | Move a blockaid to a different location"
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Reflect",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 3",
+      "text | Enemy's spell is reversed and the caster takes damage."
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Block",
+    "contents": [
+      "subtitle | Spell, Fast",
+      "rule",
+      "property | Magic Cost: | 3",
+      "text | Nullifys enemies spell."
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Summon",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 5",
+      "text | Summon a group of bandits."
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Gamagorath's SpellBook",
+    "contents": [
+      "subtitle | Item",
+      "rule",
+      "text | MAG gets +5"
+    ],
+    "tags": [
+      "item"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Potion of Endurance",
+    "contents": [
+      "subtitle | Item, consumable",
+      "rule",
+      "text | Restores STA to full."
+    ],
+    "tags": [
+      "item"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Crossbow",
+    "contents": [
+      "subtitle | Item, equipable",
+      "rule",
+      "text | This item can only be used on Archer",
+      "text | Raise RNG by +2",
+      "text | Raise ATK by +2"
+    ],
+    "tags": [
+      "item"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Lethal Potion",
+    "contents": [
+      "subtitle | Item, consumable",
+      "rule",
+      "text | Item can only be used if next to an enemy piece.",
+      "text | for the next 4 turns the affected piece will lose 1 health per turn."
+    ],
+    "tags": [
+      "item"
+    ],
+    "color": "",
+    "icon": "knapsack",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Natures Demise",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "text | For the next 3 turns the affected piece will take 2 damage per turn."
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  },
+  {
+    "count": 1,
+    "title": "Time Skip",
+    "contents": [
+      "subtitle | Spell",
+      "rule",
+      "property | Magic Cost: | 7",
+      "text | Take Another Turn"
+    ],
+    "tags": [
+      "spell"
+    ],
+    "color": "crimson",
+    "icon": "magic-swirl",
+    "icon_back": "split-cross"
+  }
+]
